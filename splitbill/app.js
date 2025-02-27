@@ -1,0 +1,1 @@
+const data = prompt("welome to javascript");

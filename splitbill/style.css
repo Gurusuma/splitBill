@@ -1,33 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
-#members {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-label {
-    margin-right: 15px;
-}
-
-input {
-    padding: 5px;
-    margin-top: 10px;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-#result {
-    margin-top: 20px;
+*{
+    margin:0;
+    padding:0;
 }

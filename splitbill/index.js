@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const createGroupBtn = document.getElementById("createGroupBtn");
     const groupNameInput = document.getElementById("groupName");
     const groupList = document.getElementById("groupList");
+    
 
     // Load groups from LocalStorage
     function loadGroups() {

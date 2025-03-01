@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Split App - Manage Group</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="w-full max-w-lg p-8 bg-white rounded shadow-md">
+        <button id="backButton" class="bg-green-500 text-white p-2 rounded mb-4">Back to Groups</button>
+
+        <h1 class="text-3xl font-semibold mb-4" id="groupTitle">Group Name</h1>
+
+        <!-- Add Members Section -->
+        <div>
+            <h2 class="text-xl font-medium">Add Members</h2>
+            <input type="text" id="memberName" class="p-2 border rounded mb-4 w-full" placeholder="Enter member's name">
+            <button id="addMemberBtn" class="w-full p-2 bg-blue-500 text-white rounded">Add Member</button>
+        </div>
+
+        <!-- List of members -->
+        <ul id="memberList" class="mt-4 list-disc pl-6">
+            <!-- Member names will be displayed here -->
+        </ul>
+
+        <!-- Add Expense Section -->
+        <div>
+            <h2 class="text-xl font-medium mt-4">Add Expense</h2>
+            <input type="text" id="expenseAmount" class="p-2 border rounded mb-4" placeholder="Expense Amount">
+            
+            <!-- Payer Selection -->
+            <select id="payerSelect" class="p-2 border rounded mb-4">
+                <option value="">Select Payer</option>
+                <!-- Payer options will be populated here -->
+            </select>
+            
+            <button id="addExpenseBtn" class="w-full p-2 bg-blue-500 text-white rounded">Add Expense</button>
+        </div>
+
+        <!-- Balance Sheet Section -->
+        <div id="balanceSheet" class="mt-6">
+            <h2 class="text-xl font-medium">Balance Sheet</h2>
+            <ul id="balanceList" class="list-none">
+                <!-- Balances will be shown here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="manage.js"></script>
+</body>
+</html>

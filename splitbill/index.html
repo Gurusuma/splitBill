@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>splitBill</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bill Split App - Create Group</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="w-full max-w-lg p-8 bg-white rounded shadow-md">
+        <h1 class="text-3xl font-semibold mb-4 text-center">Create a Group</h1>
+        <input type="text" id="groupName" class="w-full p-2 border rounded mb-4" placeholder="Enter group name" >
+        <button id="createGroupBtn" class="w-full p-2 bg-blue-500 text-white rounded">Create Group</button>
+        <div id="groupsList" class="mt-6">
+            <h2 class="text-xl font-medium mb-2">Your Groups:</h2>
+            <div id="groupList" class="grid grid-cols-2 gap-4">
+                <!-- Group list will appear here dynamically -->
+            </div>
+        </div>
+    </div>
 
-
-
-
-    
-
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
